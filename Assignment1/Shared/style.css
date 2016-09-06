@@ -1,0 +1,10 @@
+﻿*{margin: 0px; padding: 0px;}
+
+.wrapper {margin: 0 auto 0 auto; width: 100%;}
+.content{background-color: #a39a95; color: #fff; float: right; width: 82%;}
+.content, aside{ min-height: 500px; text-align:center;}
+
+header, footer {background-color: #008080; height: 100px; clear: both; }
+/*aside {width: 25%; background-color: #4f81bd; float: left;}*/
+aside {width: 18%; text-align:center; background-color: #283e3e; color: #fff; float: right;}
+footer {text-align: center; color: #fff;}

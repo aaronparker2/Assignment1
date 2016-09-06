@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="@Href("~/shared/style.css")" type="text/css" />
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            @*<h1>This is my header</h1>*@
+            @RenderPage("~/Shared/_Header.cshtml")
+        </header>
+
+        <aside>
+            @*<h2>This is my sidebar</h2>*@
+            @RenderSection("sidebar", false)
+        </aside>
+        <div class="content">
+            @RenderBody()
+            @* can only have renderbody in one place *@
+        </div>
+
+        <footer>
+            @*<p>This is my Footer</p>*@
+            @RenderPage("~/Shared/_Footer.cshtml")
+
+
+        </footer>
+
+
+    </div>
+
+
+</body>
+</html>
+
