@@ -1,9 +1,38 @@
-﻿<!DOCTYPE html>
-<html>
-    <head>
-        <title></title>
-    </head>
-    <body>
+﻿@if (IsPost)
+{
+<text>
+    The time is: <br /> @DateTime.Now <br />
+    @DateTime.Now is the <em>current</em> time.
+</text>
 
-    </body>
+}
+
+
+
+@{
+    Layout = "~/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guitars</title>
+</head>
+<body>
+    <form method="post" action="">
+        <input type="submit" name="submit" value="submit" />
+
+    </form>
+
+
+</body>
 </html>
+@section sidebar{
+<ul>
+    <li>fire</li>
+    <li>ice</li>
+    <li>rock</li>
+
+</ul>
+
+}

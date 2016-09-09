@@ -1,9 +1,37 @@
-﻿<!DOCTYPE html>
-<html>
-    <head>
-        <title></title>
-    </head>
-    <body>
+﻿@* These are comments in Razor - Demo of Arrays *@
+@{
+    Layout = "~/Shared/_Layout.cshtml";
+}
 
-    </body>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Songs</title>
+</head>
+<body>
+    @{
+    <h3>My Favorite Songs</h3>
+    string[] favoriteSongs = { "'Fallen' Volbeat ", "'Fade to Black' Metallica ", "'November Rain' Guns-n-Roses", "'Hold On' Dierks Bentley" };
+    Array.Reverse(favoriteSongs);
+    foreach (var song in favoriteSongs)
+    {
+    <p>@song</p>
+    }
+    }
+
+    <p>The length of the Array is @favoriteSongs.Length</p>
+    <p>'Fade to Black' Metallica  is in position @Array.IndexOf(@favoriteSongs, "'Fade to Black' Metallica ") blah blah</p>
+    <p>The array item in position 3 is @favoriteSongs[3]</p>
+
+</body>
 </html>
+@section sidebar{
+<ul>
+    <li>rock</li>
+    <li>paper</li>
+    <li>scissors</li>
+
+</ul>
+
+}

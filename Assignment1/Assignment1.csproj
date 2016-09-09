@@ -135,7 +135,6 @@
     <Content Include="Shared\style.css" />
     <Content Include="WebPage1.cshtml" />
     <Content Include="WebPage2.cshtml" />
-    <Content Include="WebPage3.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="scripts\ai.0.22.9-build00167.js" />
