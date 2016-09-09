@@ -118,6 +118,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\Explorer.jpg" />
+    <Content Include="Images\LesPaul.jpg" />
+    <Content Include="Images\RG.png" />
+    <Content Include="Images\SG.jpg" />
+    <Content Include="Images\Stratocaster.jpg" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -126,6 +131,7 @@
     <Content Include="Shared\_Footer.cshtml" />
     <Content Include="Shared\_Header.cshtml" />
     <Content Include="Shared\_Layout.cshtml" />
+    <Content Include="Forms.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

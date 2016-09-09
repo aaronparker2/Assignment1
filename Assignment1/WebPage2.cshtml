@@ -10,14 +10,32 @@
     <title>Songs</title>
 </head>
 <body>
+    <table class="center" id="songs" border="1">
+
+        <tr>
+            <th>Song</th>
+            <th>Band/Singer</th>
+        </tr>
+
+        <tr>
+            <td>memory remains</td>
+            <td>back in black</td>
+
+        </tr>
+        <tr>
+            <td>Metallica</td>
+            <td>AC/DC</td>
+
+        </tr>
+    </table>
     @{
-    <h3>My Favorite Songs</h3>
-    string[] favoriteSongs = { "'Fallen' Volbeat ", "'Fade to Black' Metallica ", "'November Rain' Guns-n-Roses", "'Hold On' Dierks Bentley" };
-    Array.Reverse(favoriteSongs);
-    foreach (var song in favoriteSongs)
-    {
-    <p>@song</p>
-    }
+        <h3>My Favorite Songs</h3>
+        string[] favoriteSongs = { "'Fallen' Volbeat ", "'Fade to Black' Metallica ", "'November Rain' Guns-n-Roses", "'Hold On' Dierks Bentley" };
+        Array.Reverse(favoriteSongs);
+        foreach (var song in favoriteSongs)
+        {
+            <p>@song</p>
+        }
     }
 
     <p>The length of the Array is @favoriteSongs.Length</p>
@@ -27,11 +45,16 @@
 </body>
 </html>
 @section sidebar{
-<ul>
-    <li>rock</li>
-    <li>paper</li>
-    <li>scissors</li>
+    <ol>
+        <li>Metallica</li>
+        <li>Volbeat</li>
+        <li>Collective-Soul</li>
+        <li>Breaking-Benjamin</li>
+        <li></li>
+        <li></li>
+    </ol>
 
-</ul>
+    
+
 
 }

@@ -1,9 +1,9 @@
 ﻿@if (IsPost)
 {
-<text>
-    The time is: <br /> @DateTime.Now <br />
-    @DateTime.Now is the <em>current</em> time.
-</text>
+    <text>
+        The time is: <br /> @DateTime.Now <br />
+        @DateTime.Now is the <em>current</em> time.
+    </text>
 
 }
 
@@ -23,16 +23,48 @@
         <input type="submit" name="submit" value="submit" />
 
     </form>
+    <h2>Pick Your Favorite Guitar</h2>
+    <div id="Guitars">
+        <div class="tooltip">
+            <a href="~/WebPage2.cshtml" id="ex">
+                <img src="~/Images/Explorer.jpg" class="tooltip" style="width:300px;height:120px">
+            </a>
+            <span class="tooltiptext">Explorer</span>
+        </div>
+        <span></span>
+        <div class="tooltip">
+            <a href="~/WebPage2.cshtml" id="lp">
+                <img src="~/Images/LesPaul.jpg" class="tooltip" style="width:300px;height:120px">
+            </a><span class="tooltiptext">LesPaul</span>
+        </div>
+        <div class="tooltip">
+            <a href="~/WebPage2.cshtml" id="rg">
+                <img src="~/Images/RG.png" id="RG" class="tooltip" style="width:300px;height:100px">
+            </a>
+            <span class="tooltiptext">RG</span>
+        </div>
+        <div class="tooltip">
+            <a href="~/WebPage2.cshtml" id="sg">
+                <img src="~/Images/SG.jpg" class="tooltip" style="width:300px;height:120px">
+            </a> <span class="tooltiptext">SG</span>
+        </div>
+        <div class="tooltip">
+            <a href="~/WebPage2.cshtml" id="st">
+                <img src="~/Images/Stratocaster.jpg" class="tooltip" style="width:300px;height:120px">
+            </a><span class="tooltiptext">Stratocaster</span>
+        </div>
+
+    </div>
 
 
 </body>
 </html>
 @section sidebar{
-<ul>
-    <li>fire</li>
-    <li>ice</li>
-    <li>rock</li>
+    <ul>
+        <li>fire</li>
+        <li>ice</li>
+        <li>rock</li>
 
-</ul>
+    </ul>
 
 }
